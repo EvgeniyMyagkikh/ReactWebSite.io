@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/ReactWebSite.io/static/css/main.aa981c98.css",
+    "main.js": "/ReactWebSite.io/static/js/main.76699f8e.js",
+    "static/js/592.3d101ebc.chunk.js": "/ReactWebSite.io/static/js/592.3d101ebc.chunk.js",
+    "static/media/2.jpg": "/ReactWebSite.io/static/media/2.c4bbcec83c8c59cc9738.jpg",
+    "static/media/item7.jpeg": "/ReactWebSite.io/static/media/item7.03aaef8b75d6c03ea0a5.jpeg",
+    "static/media/item5.jpeg": "/ReactWebSite.io/static/media/item5.edac6e584b910f81984e.jpeg",
+    "static/media/prod-2.jpg": "/ReactWebSite.io/static/media/prod-2.c80e4b086a8d59e8f2e1.jpg",
+    "static/media/item6.jpeg": "/ReactWebSite.io/static/media/item6.06bcd784bd9681c9bd20.jpeg",
+    "static/media/prod-1.jpeg": "/ReactWebSite.io/static/media/prod-1.017e0efd330e5ffede2c.jpeg",
+    "static/media/1.jpg": "/ReactWebSite.io/static/media/1.31632be6314970cafd38.jpg",
+    "static/media/prod-3.jpg": "/ReactWebSite.io/static/media/prod-3.ac5daa9a12a4eaddee76.jpg",
+    "static/media/item4.jpeg": "/ReactWebSite.io/static/media/item4.f6494675f745b97e3cad.jpeg",
+    "static/media/item1.jpeg": "/ReactWebSite.io/static/media/item1.b709233e0afadca39478.jpeg",
+    "static/media/background.jpg": "/ReactWebSite.io/static/media/background.adc7f00094b686f79cbe.jpg",
+    "static/media/4.jpg": "/ReactWebSite.io/static/media/4.c0ee7527f0187c5eecde.jpg",
+    "static/media/item3.jpeg": "/ReactWebSite.io/static/media/item3.d5e5733f7aa2210af208.jpeg",
+    "static/media/item2.jpeg": "/ReactWebSite.io/static/media/item2.b4852e467b4053810101.jpeg",
+    "static/media/woods.png": "/ReactWebSite.io/static/media/woods.6cba729d87d6c5e45306.png",
+    "static/media/3.jpg": "/ReactWebSite.io/static/media/3.c8aabeab17b7b35168a9.jpg",
+    "static/media/5.jpg": "/ReactWebSite.io/static/media/5.301d526795953eeec360.jpg",
+    "static/media/6.jpg": "/ReactWebSite.io/static/media/6.7eecfe46bd1f73e8581d.jpg",
+    "static/media/NoPhoto.jpg": "/ReactWebSite.io/static/media/NoPhoto.4d133a8245aafa6b43ea.jpg",
+    "static/media/mail.png": "/ReactWebSite.io/static/media/mail.d97f9f2360a0c32f5438.png",
+    "static/media/tg.png": "/ReactWebSite.io/static/media/tg.7e0ef73fe27e739c1417.png",
+    "static/media/phone.png": "/ReactWebSite.io/static/media/phone.e272ac4dea14a418db88.png",
+    "static/media/PoliticsTD.docx": "/ReactWebSite.io/static/media/PoliticsTD.a075fd633eeb57f96a36.docx",
+    "static/media/left.png": "/ReactWebSite.io/static/media/left.3f8c7fa7d7f70f86ee84.png",
+    "static/media/right.png": "/ReactWebSite.io/static/media/right.2e4dd0b31d89e9b468a2.png",
+    "index.html": "/ReactWebSite.io/index.html",
+    "main.aa981c98.css.map": "/ReactWebSite.io/static/css/main.aa981c98.css.map",
+    "main.76699f8e.js.map": "/ReactWebSite.io/static/js/main.76699f8e.js.map",
+    "592.3d101ebc.chunk.js.map": "/ReactWebSite.io/static/js/592.3d101ebc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa981c98.css",
+    "static/js/main.76699f8e.js"
+  ]
+}
