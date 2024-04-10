@@ -1,0 +1,691 @@
+.Products h1 {
+    margin-top: 25vh;
+    color: white;
+    font-family: Montserrat, serif;
+    font-size: 7vh;
+    font-weight: 300;
+    text-align: center;
+}
+
+.items_column_container {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ОБЩИЕ СВОЙСТВА ITEM */
+
+.items_column div {
+    width: 35vw;
+    margin: 1vh 1vw;
+    object-fit: cover;
+}
+
+.items_row div {
+    user-select: none;
+    width: 20vw;
+    border-radius: 30px;
+    margin-top: 1vh;
+}
+
+/* СВОЙСТВА ITEM (КАЖДОЙ ПЛИТКИ) */
+
+.item-1 {
+    position: relative;
+    height: 40vh;
+    width: 35vw;
+
+    flex-basis: 40vh;
+}
+
+.items_column img{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    object-fit:cover;
+}
+
+.items_row img{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    object-fit:cover;
+}
+
+.item{
+    transition: all .2s ease-in-out;
+    background-size: cover;
+}
+
+.item:hover{
+    transform: scale(1.02);
+}
+
+.item-2 {
+    position: relative;
+    flex-basis: 85vh;
+    height: 85vh;
+    width: 35vw;
+}
+
+.item-3 {
+    position: relative;
+
+    height: 75vh;
+    width: 35vw;
+    flex-basis: 75vh;
+}
+
+.item-4 {
+
+    height: 50vh;
+    width: 50vw;
+    position: relative;
+
+    flex-basis: 50vh;
+}
+
+.item-5 {
+    position: relative;
+    height: 35vh;
+
+    /*flex-basis: 50vh;*/
+
+    margin-left: 13vw;
+    margin-right: 2vw;
+}
+
+.item-6 {
+    position: relative;
+    height: 35vh;
+
+    flex-basis: 50vw;
+
+    background-position-y: center;
+
+    margin-right: 13vw;
+}
+
+.item-7 {
+    position: relative;
+    width: 72vw;
+    height: 20vh;
+
+    top: 1vh;
+
+    background-position-y: center;
+
+    flex-basis: 72vw;
+    margin-bottom: 5vh;
+}
+
+/* СВОЙСТВА КОЛОНОК И РЯДОВ ПЛИТОК */
+
+.items_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.items_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* СВОЙСТВА ITEM_LABEL ДЛЯ КАЖДОЙ ПЛИТКИ */
+
+.item-1 div {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    justify-content: center;
+}
+
+.item-2 div {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+    justify-content: center;
+}
+
+.item-3 div {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+
+    display: flex;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    justify-content: center;
+}
+
+.item-4 div {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+
+    display: flex;
+    height: 4vh;
+    width: 10vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+    justify-content: center;
+}
+
+.item-5 div {
+    position: absolute;
+    bottom: 3%;
+    left: 12%;
+
+    display: flex;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+}
+
+.item-6 div {
+    position: absolute;
+    bottom: 3%;
+    left: 68%;
+
+    display: flex;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+}
+
+.item-7 div {
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+
+    display: flex;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+}
+
+/* СВОЙСТВА НАЗВАНИЙ ПЛИТОК */
+
+.item_label span {
+    font-family: "Montserrat", serif;
+    font-size: 0.9vw;
+    color: #202020;
+    margin: auto;
+}
+
+/* Ipad Air*/
+@media (max-width: 1181px) and (orientation: portrait) {
+    .Products h1 {
+        margin-top: 10vh;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 5vh;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .items_column_container {
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* ОБЩИЕ СВОЙСТВА ITEM */
+
+    .items_column div {
+        user-select: none;
+        width: 45vw;
+        margin: 1vh 1vw;
+        object-fit: cover;
+    }
+
+    .items_row div {
+        user-select: none;
+        width: 90vw;
+        border-radius: 30px;
+        margin-top: 1vh;
+    }
+
+    .item-1{
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-2 {
+        position: relative;
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-3{
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-4 {
+        position: relative;
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-5 {
+        position: relative;
+        height: 35vh;
+        margin: 1vh 1vw;
+
+        flex-basis: 45vw;
+    }
+
+    .item-6 {
+        position: relative;
+        height: 35vh;
+        flex-basis: 45vw;
+        background-position-y: center;
+        margin: 1vh 1vw;
+    }
+
+    .item-7 {
+        position: relative;
+        height: 20vh;
+        margin: auto;
+
+        top: 1vh;
+
+        background-position-y: center;
+
+        flex-basis: 90vw;
+    }
+
+    /* СВОЙСТВА ITEM_LABEL ДЛЯ КАЖДОЙ ПЛИТКИ */
+
+    .item-1 div {
+        margin: 1vh 3vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-2 div {
+        margin: 1vh 3vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-3 div {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-4 div {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-5 div {
+        margin: 1vh -1.5vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 40vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-6 div {
+        margin: 1vh -55%;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-7 div {
+        margin: 1vh -17%;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 50vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item_label span {
+        font-family: "Montserrat", serif;
+        font-size: 2vw;
+        color: #202020;
+        margin: auto;
+    }
+}
+
+/* Iphone X and Max */
+@media (max-width: 576px) and (orientation: portrait) {
+    .Products h1 {
+        margin-top: 10vh;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 5vh;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .items_column_container {
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* ОБЩИЕ СВОЙСТВА ITEM */
+
+    .items_column div {
+        user-select: none;
+        width: 45vw;
+        margin: 1vh 1vw;
+        object-fit: cover;
+    }
+
+    .items_row div {
+        user-select: none;
+        width: 90vw;
+        border-radius: 30px;
+        margin-top: 1vh;
+    }
+
+    .item-1{
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-2 {
+        position: relative;
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-3{
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-4 {
+        position: relative;
+        flex-basis: 35vh;
+        height: 35vh;
+        width: 35vw;
+    }
+
+    .item-5 {
+        position: relative;
+        height: 35vh;
+        margin: 1vh 1vw;
+
+        flex-basis: 45vw;
+    }
+
+    .item-6 {
+        position: relative;
+        height: 35vh;
+        flex-basis: 45vw;
+        background-position-y: center;
+        margin: 1vh 1vw;
+    }
+
+    .item-7 {
+        position: relative;
+        height: 20vh;
+        margin: auto;
+
+        top: 1vh;
+
+        background-position-y: center;
+
+        flex-basis: 90vw;
+    }
+
+    /* СВОЙСТВА ITEM_LABEL ДЛЯ КАЖДОЙ ПЛИТКИ */
+
+    .item-1 div {
+        margin: 1vh 3vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-2 div {
+        margin: 1vh 3vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-3 div {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-4 div {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 12px;
+
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-5 div {
+        margin: 1vh -1.5vh;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 40vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item-6 div {
+        margin: 1vh -55%;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 35vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-7 div {
+        margin: 1vh -17%;
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        height: 4vh;
+        width: 50vw;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.90);
+
+        justify-content: center;
+    }
+
+    .item_label span {
+        font-family: "Montserrat", serif;
+        font-size: 2.4vw;
+        color: #202020;
+        margin: auto;
+    }
+}
+
+@media (max-width: 376px) {
+    /* СВОЙСТВА ITEM_LABEL ДЛЯ КАЖДОЙ ПЛИТКИ */
+    .item div{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+
+        border-radius: 1vh;
+        height: 4vh;
+        width: 35vw;
+        background: rgba(255, 255, 255, 0.90);
+        justify-content: center;
+    }
+
+    .item-1 div {
+        margin: 1vh 3vh;
+    }
+
+    .item-2 div {
+        margin: 1vh 3vh;
+    }
+
+    .item-3 div {
+        left: 10%;
+    }
+
+    .item-4 div {
+        left: 9%;
+    }
+
+    .item-5 div {
+        margin: 1vh -0.2vh;
+    }
+
+    .item-6 div {
+        margin: 1vh -57%;
+    }
+
+    .item-7 div {
+        margin: 1vh -8%;
+    }
+
+    .item_label span {
+        font-family: "Montserrat", serif;
+        font-size: 2.3vw;
+        font-weight: 500;
+        color: #202020;
+    }
+}
+
+

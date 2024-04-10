@@ -1,0 +1,338 @@
+.Feedback h1{
+    margin-top: 15vh;
+    color: white;
+    font-family: Montserrat, serif;
+    font-size: 7vh;
+    font-weight: 300;
+    text-align: center;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    width: 65vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+.section{
+    position: relative;
+    border-radius: 27px;
+    height: 68vh;
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.image-1{
+    position: relative;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20px;
+    left: 1vw;
+    box-shadow: 1px 3px 4px black;
+}
+
+.image-2{
+    position: relative;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20px;
+    top:18vh;
+    right: 4vw;
+}
+
+.section span{
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -25vh;
+    left: 28vw;
+    width: 35vw;
+    color: white;
+    font-size: 2.5vh;
+    line-height: 150%;
+    font-family: Montserrat, serif;
+    font-style: italic;
+
+}
+
+.section h3{
+    font-family: Montserrat, serif;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    display: block;
+    position: relative;
+    text-align: center;
+    bottom: 20vh;
+    left: 27vw;
+
+}
+
+.prev, .next{
+    width: 2vw;
+    height: 5vh;
+    margin: auto 15vh;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+
+.prev:hover, .next:hover {transform: scale(1.25);}
+
+.prev {background-image: url("../media/img/arrows/left.png")}
+.next {background-image: url("../media/img/arrows/right.png")}
+
+::-webkit-scrollbar{display: none}
+
+/* Ipad Pro*/
+@media (max-width: 1367px) and (orientation: portrait){
+
+    .slider{
+        display: flex;
+        align-items: center;
+        width: 90vw;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+    }
+
+    .section{
+        position: relative;
+        border-radius: 27px;
+        height: 68vh;
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .image-1{
+        width: 30vw;
+        height: 30vh;
+        top: 3vh;
+        left: 16vw;
+    }
+
+    .image-2{
+        box-shadow: 1px 3px 4px black;
+        width: 30vw;
+        height: 30vh;
+        top:10vh;
+        left: 15vw;
+    }
+
+    .section span{
+        top: 16vh;
+        left: 5vw;
+        width: 80vw;
+        font-size: 2vh;
+
+    }
+
+    .section h3{
+        display: none;
+
+    }
+
+    .prev, .next{
+        width: 4vw;
+        height: 3vh;
+        margin-right: 10px;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.25s;
+        background-color: transparent;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .Feedback h1{
+        margin-top: 15vh;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 3vh;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .slider{
+        display: flex;
+        align-items: center;
+        width: 90vw;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+    }
+
+    .section{
+        position: relative;
+        border-radius: 27px;
+        height: 68vh;
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .image-1{
+        position: relative;
+        width: 40vw;
+        height: 30vh;
+        top: 5vh;
+        border-radius: 20px;
+        left: 6vw;
+        box-shadow: 1px 3px 4px black;
+        z-index: 0;
+    }
+
+    .image-2{
+        position: relative;
+        width: 40vw;
+        height: 30vh;
+        border-radius: 20px;
+        top:15vh;
+        left: 2vw;
+    }
+
+    .section span{
+        display: block;
+        position: relative;
+        text-align: center;
+        top: 18vh;
+        left: 5vw;
+        width: 80vw;
+        color: white;
+        font-size: 1.6vh;
+        line-height: 150%;
+        font-family: Montserrat, serif;
+        font-style: italic;
+
+    }
+
+    .section h3{
+        display: none;
+
+    }
+
+    .prev, .next{
+        width: 4vw;
+        height: 3vh;
+        margin-right: 10px;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.25s;
+        background-color: transparent;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .Feedback h1{
+        margin-top: 15vh;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 5vh;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .slider{
+        display: flex;
+        align-items: center;
+        width: 90vw;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+    }
+
+    .section{
+        position: relative;
+        border-radius: 27px;
+        height: 80vh;
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .image-1{
+        position: relative;
+        width: 40vw;
+        height: 30vh;
+        top: 5vh;
+        border-radius: 20px;
+        left: 6vw;
+        box-shadow: 1px 3px 4px black;
+        z-index: 0;
+    }
+
+    .image-2{
+        position: relative;
+        width: 40vw;
+        height: 30vh;
+        border-radius: 20px;
+        top:15vh;
+        left: 2vw;
+    }
+
+    .section span{
+        display: block;
+        position: relative;
+        text-align: center;
+        top: 18vh;
+        left: 3vw;
+        width: 85vw;
+        color: white;
+        font-size: 2.3vh;
+        line-height: 150%;
+        font-family: Montserrat, serif;
+        font-style: italic;
+
+    }
+
+    .section h3{
+        display: none;
+
+    }
+
+    .prev, .next{
+        width: 4vw;
+        height: 3vh;
+        margin-right: 10px;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.25s;
+        background-color: transparent;
+    }
+
+}

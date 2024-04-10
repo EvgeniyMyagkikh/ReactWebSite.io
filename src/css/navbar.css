@@ -1,0 +1,506 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    position: relative;
+    width: 20vw;
+    height: 7vh;
+    background: rgba(0, 0, 0, 0.50);
+    border-radius: 14px;
+    left: 1vw;
+}
+
+.logo h2 {
+    margin: auto;
+}
+
+.logo_text {
+    margin: auto;
+    text-decoration: none;
+    user-select: none;
+    color: white;
+
+    font-family: "Montserrat", serif;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.sections {
+    user-select: none;
+    list-style: none;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+.sections li {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    color: white;
+    display: inline-block;
+    margin: 2vw 3vw;
+
+    font-family: "Montserrat", serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.li_text {
+    color: white;
+    text-decoration: none;
+}
+
+.sections li:hover {
+    transform: scale(1.1);
+}
+
+.tg_logo {
+    width: 4vw;
+    margin-right: 5vw;
+}
+
+.phone_logo {
+    width: 4.5vw;
+    margin-right: 5vw;
+}
+
+.tg_logo:hover, .phone_logo:hover {
+    opacity: 80%;
+}
+
+@media (max-width: 2244px) and (orientation: landscape){
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: inline-block;
+        margin: 2vw 2vw;
+
+        font-family: "Montserrat", serif;
+        font-size: 1.5vw;
+        font-weight: 400;
+    }
+}
+
+/* Notebook */
+@media (max-width: 1367px) and (max-height: 1023px) {
+    .logo {
+        width: 18vw;
+        height: 7vh;
+    }
+
+    .logo_text {
+        font-size: 5vh;
+        font-weight: 300;
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: inline-block;
+        margin: 2vw 2vw;
+
+        font-family: "Montserrat", serif;
+        font-size: 3vh;
+        font-weight: 400;
+    }
+}
+
+/* Ipad Pro */
+@media (max-width: 1367px) and (orientation: portrait){
+
+    .logo {
+        background: none;
+        margin: auto auto auto 35vw;
+    }
+
+    .logo_text {
+        font-size: 5vw;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        width: 4vw;
+        height: 4vw;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        border: 0;
+        margin-left: 4vw;
+        margin-top: 0.5vh;
+        background-image: url('../media/img/bg/Burger.png');
+    }
+
+    .sections {
+        position: fixed;
+        top: 10vh;
+        left: -20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 15%;
+        height: 20%;
+        background-color: white;
+        border-radius: 15px;
+        transition: transform 0.3s linear;
+    }
+
+    .sections.active {
+        transform: translateX(115%);
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: flex;
+        margin: 1vh 1.25vh;
+    }
+
+    .li_text {
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 2vw;
+        color: black;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: row;
+        margin: auto -2vh;
+    }
+
+    .tg_logo {
+        width: 3.75vh;
+        margin-right: 3vh;
+    }
+
+    .phone_logo {
+        width: 4vh;
+    }
+}
+
+/* Ipad Air*/
+@media (max-width: 1181px) and (orientation: landscape){
+    .logo {
+        display: flex;
+        text-align: center;
+        transition: all .2s ease-in-out;
+        position: relative;
+        width: 22vw;
+        height: 7vh;
+        background: rgba(0, 0, 0, 0.50);
+        border-radius: 14px;
+    }
+
+    .logo_text {
+        margin: auto;
+        text-decoration: none;
+        user-select: none;
+        color: white;
+
+        font-family: "Montserrat", serif;
+        font-size: 4.5vh;
+        font-weight: 300;
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: inline-block;
+        margin: 2vw 1vw;
+
+        font-family: "Montserrat", serif;
+        font-size: 2.5vh;
+        font-weight: 400;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: row;
+        margin: auto 2vw;
+    }
+
+    .tg_logo {
+        width: 3.5vw;
+        margin-right: 3vw;
+    }
+
+    .phone_logo {
+        width: 3.75vw;
+    }
+}
+
+/* Ipad Mini*/
+@media (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        background: none;
+        margin: auto auto auto 35vw;
+    }
+
+    .logo_text {
+        font-size: 5vw;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        width: 4vw;
+        height: 4vw;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        border: 0;
+        margin-left: 4vw;
+        margin-top: 0.5vh;
+        background-image: url('../media/img/bg/Burger.png');
+    }
+
+    .sections {
+        position: fixed;
+        top: 10vh;
+        left: -25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 14%;
+        height: 20%;
+        background-color: white;
+        border-radius: 15px;
+        transition: transform 0.3s linear;
+    }
+
+    .sections.active {
+        transform: translateX(115%);
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: flex;
+        margin: 1vh 1.25vh;
+    }
+
+    .li_text {
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 1.7vw;
+        color: black;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: row;
+        margin: 2vh -2vh;
+    }
+
+    .tg_logo {
+        width: 4.75vw;
+        margin-right: 3vh;
+    }
+
+    .phone_logo {
+        width: 5vw;
+    }
+}
+
+/* Iphone X and Max */
+@media (max-width: 576px) and (orientation: portrait){
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        background: none;
+        margin: 3vh 13vh;
+    }
+
+    .logo_text {
+        font-size: 8vw;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        width: 6vw;
+        height: 6vw;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        border: 0;
+        margin-left: 4.5vw;
+        margin-top: 0.5vh;
+        background-image: url('../media/img/bg/Burger.png');
+    }
+
+    .sections {
+        position: fixed;
+        top: 10vh;
+        left: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+        height: 25%;
+        background-color: white;
+        border-radius: 15px;
+        transition: transform 0.3s linear;
+    }
+
+    .sections.active {
+        transform: translateX(115%);
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: flex;
+        margin: 1vh -1vh;
+
+        font-family: "Montserrat", serif;
+        font-size: 2.5vh;
+        font-weight: 400;
+
+    }
+
+    .li_text {
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 3vw;
+        color: black;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: row;
+        margin: auto 10vw;
+    }
+
+    .tg_logo {
+        width: 3.75vh;
+        margin-right: 2vh;
+    }
+
+    .phone_logo {
+        width: 4vh;
+    }
+}
+
+/* Iphone 8 */
+@media (max-width: 376px) {
+    .logo {
+        background: none;
+        margin: 3vh 15vh;
+    }
+
+    .logo_text {
+        font-size: 8vw;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        width: 6vw;
+        height: 6vw;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        border: 0;
+        margin-left: 4.5vw;
+        margin-top: 0.5vh;
+        background-image: url('../media/img/bg/Burger.png');
+    }
+
+    .sections {
+        position: fixed;
+        top: 10vh;
+        left: -155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 23%;
+        height: 33%;
+        background-color: white;
+        border-radius: 15px;
+        transition: transform 0.3s linear;
+    }
+
+    .sections.active {
+        transform: translateX(115%);
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+
+    .sections li {
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: white;
+        display: flex;
+        margin: 1.5vh -0.5vh;
+    }
+
+    .li_text {
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 3.5vw;
+        color: black;
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: row;
+        margin: auto -1vw 3vh auto;
+    }
+
+    .tg_logo {
+        width: 4.75vh;
+        margin-right: 2vh;
+    }
+
+    .phone_logo {
+        width: 5vh;
+    }
+}

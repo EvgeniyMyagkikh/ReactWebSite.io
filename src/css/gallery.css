@@ -1,0 +1,562 @@
+.gallery {
+    display: flex;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+}
+
+.gallery h1 {
+    position: absolute;
+    margin-top: 15vh;
+    color: white;
+    font-family: Montserrat, serif;
+    font-size: 5vh;
+    font-weight: 500;
+}
+
+.gallery_items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* СВОЙСТВА ITEM */
+
+.item_box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35vh;
+    margin-bottom: -15vh;
+}
+
+
+.about_item {
+    width: 35vw;
+    margin-right: 10vw;
+    margin-left: 5vw;
+}
+
+.item_info {
+    display: inline-flex;
+    background: rgba(119, 85, 61, 0.74);
+    height: 4vh;
+    padding: 0 2vh;
+    border-radius: 1.1vh;
+    margin-bottom: 2vh;
+}
+
+.item_info span {
+    color: white;
+    font-family: Montserrat, serif;
+    margin: auto;
+    font-size: 1vw;
+}
+
+.item_title {
+    color: white;
+    font-size: 1.3vw;
+    margin-left: 0.5vh;
+}
+
+.item_text {
+    text-align: justify;
+    color: white;
+    width: 40vw;
+    font-family: Montserrat, serif;
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 195%;
+}
+
+.text-2 {
+    margin-top: 6vh;
+}
+
+/* SLIDER */
+
+.gallery_slider {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 45vw;
+    height: 70vh;
+    border-radius: 1.2vw;
+}
+
+.gallery_slider img {
+    object-fit: cover;
+    width: 30vw;
+    height: 65vh;
+    border-radius: 1.2vw;
+}
+
+.prev, .next {
+    margin: auto;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: 0.25s;
+}
+
+
+/* REVERSED CARD */
+
+.item_box button, .item_box_active button {
+    background-color: black;
+    border: 0;
+    height: 4vh;
+    width: 3vh;
+}
+
+.item_box_active {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 30vh;
+}
+
+.about_item_active {
+    width: 30vw;
+    margin-right: 23vh;
+    margin-left: -3vh;
+}
+
+.gallery_slider_active{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    width: 45vw;
+    height: 70vh;
+    border-radius: 1.2vw;
+
+}
+
+.gallery_slider_active img {
+    object-fit: cover;
+    width: 30vw;
+    height: 65vh;
+    border-radius: 1.2vw;
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+
+/* Ipads */
+@media (max-width: 1367px) and (orientation: landscape) {
+    .item_info span {
+        font-size: 1.5vw;
+    }
+
+    .item_title {
+        font-size: 2vw;
+    }
+
+    .item_text {
+        text-align: justify;
+        color: white;
+        width: 40vw;
+        font-family: Montserrat, serif;
+        font-size: 1.5vw;
+        font-weight: 400;
+        line-height: 195%;
+    }
+
+    .text-2 {
+        margin-top: 6vh;
+    }
+
+    .gallery_slider {
+        width: 50vw;
+        height: 75vh;
+    }
+
+    .gallery_slider img {
+        width: 35vw;
+        height: 70vh;
+    }
+
+    .gallery_slider_active{
+        width: 50vw;
+        height: 75vh;
+
+    }
+
+    .gallery_slider_active img {
+        width: 35vw;
+        height: 70vh;
+    }
+
+}
+
+@media (max-width: 1367px)  and (orientation: portrait) {
+    .gallery{
+        display: block;
+        justify-content: center;
+    }
+
+    .gallery h1 {
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 35vw;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 3vh;
+        font-weight: 500;
+    }
+
+    .item_box, .item_box_active {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-top: 25vh;
+        margin-bottom: -10vh;
+        margin-left: -1.5vh;
+    }
+
+    .about_item, .about_item_active{
+        text-align: center;
+        width: 64vw;
+        margin-left: 15vw;
+    }
+
+    .item_info {
+        display: inline-flex;
+        background: rgba(119, 85, 61, 0.74);
+        height: 2.2vh;
+        padding: 0 1.5vh;
+        border-radius: 1.1vh;
+        margin-bottom: 0.3vh;
+        margin-left: 5.5vh;
+    }
+
+    .item_info span {
+        color: white;
+        font-family: Montserrat, serif;
+        margin: auto;
+        font-size: 1.5vh;
+    }
+
+    .item_title {
+        color: white;
+        font-size: 2vh;
+        margin-left: 5vh;
+    }
+
+    .item_text {
+        text-align: justify;
+        color: white;
+        width: 74vw;
+        font-family: Montserrat, serif;
+        font-size: 1.5vh;
+        font-weight: 400;
+        line-height: 180%;
+    }
+
+    .text-2 {
+        margin-top: 2vh;
+    }
+
+    .gallery_slider{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider_active{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider img, .gallery_slider_active img {
+        object-fit: cover;
+        width: 75vw;
+        height: 30vh;
+        border-radius: 1.2vw;
+    }
+
+    .prev, .next {
+        margin: auto auto auto auto;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        transition: 0.25s;
+    }
+
+    .item_box button, .item_box_active button {
+        background-color: transparent;
+        border: 0;
+        height: 3vh;
+        width: 1vh;
+    }
+}
+
+/* Iphone Max */
+@media (max-width: 576px)  and (orientation: portrait) {
+    .gallery{
+        display: block;
+        justify-content: center;
+    }
+
+    .gallery h1 {
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 13.5vh;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 3vh;
+        font-weight: 500;
+    }
+
+    .item_box, .item_box_active {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-top: 25vh;
+        margin-bottom: -10vh;
+        margin-left: -1.5vh;
+    }
+
+    .about_item, .about_item_active{
+        text-align: center;
+        width: 64vw;
+        margin-left: 15vw;
+    }
+
+    .item_info {
+        display: inline-flex;
+        background: rgba(119, 85, 61, 0.74);
+        height: 2.2vh;
+        padding: 0 1.5vh;
+        border-radius: 1.1vh;
+        margin-bottom: 0.3vh;
+        margin-left: 5.5vh;
+    }
+
+    .item_info span {
+        color: white;
+        font-family: Montserrat, serif;
+        margin: auto;
+        font-size: 1.5vh;
+    }
+
+    .item_title {
+        color: white;
+        font-size: 2vh;
+        margin-left: 5vh;
+    }
+
+    .item_text {
+        text-align: justify;
+        color: white;
+        width: 74vw;
+        font-family: Montserrat, serif;
+        font-size: 1.5vh;
+        font-weight: 400;
+        line-height: 180%;
+    }
+
+    .text-2 {
+        margin-top: 2vh;
+    }
+
+    .gallery_slider{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider_active{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider img, .gallery_slider_active img {
+        object-fit: cover;
+        width: 75vw;
+        height: 30vh;
+        border-radius: 1.2vw;
+    }
+
+    .prev, .next {
+        margin: auto auto auto auto;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        transition: 0.25s;
+    }
+
+    .item_box button, .item_box_active button {
+        background-color: transparent;
+        border: 0;
+        height: 3vh;
+        width: 1vh;
+    }
+}
+
+/* Iphone 8 */
+@media (max-width: 376px) {
+    .gallery{
+        display: block;
+        justify-content: center;
+    }
+
+    .gallery h1 {
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 26vw;
+        color: white;
+        font-family: Montserrat, serif;
+        font-size: 4vh;
+        font-weight: 500;
+    }
+
+    .item_box, .item_box_active {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-top: 25vh;
+        margin-bottom: -10vh;
+        margin-left: -1.5vh;
+    }
+
+    .about_item, .about_item_active{
+        text-align: center;
+        width: 64vw;
+        margin-left: 15vw;
+    }
+
+    .item_info {
+        display: inline-flex;
+        background: rgba(119, 85, 61, 0.74);
+        height: 2.2vh;
+        padding: 1vh 1.5vh;
+        border-radius: 1.1vh;
+        margin: auto auto 0.3vh 12vw;
+    }
+
+    .item_info span {
+        color: white;
+        font-family: Montserrat, serif;
+        margin: auto;
+        font-size: 1.8vh;
+    }
+
+    .item_title {
+        color: white;
+        width: 45vh;
+        font-size: 3vh;
+        margin-left: 2vw;
+    }
+
+    .item_text {
+        text-align: justify;
+        color: white;
+        width: 74vw;
+        font-family: Montserrat, serif;
+        font-size: 2.5vh;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    .text-2 {
+        margin-top: 2vh;
+    }
+
+    .gallery_slider{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider_active{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 89vw;
+        height: 30vh;
+        margin-left: 8vw;
+        border-radius: 1.2vw;
+    }
+
+    .gallery_slider img, .gallery_slider_active img {
+        object-fit: cover;
+        width: 75vw;
+        height: 30vh;
+        border-radius: 1.2vw;
+    }
+
+    .prev, .next {
+        margin: auto auto auto auto;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        transition: 0.25s;
+    }
+
+    .item_box button, .item_box_active button {
+        background-color: transparent;
+        border: 0;
+        height: 3vh;
+        width: 1vh;
+    }
+}

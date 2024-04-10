@@ -1,0 +1,185 @@
+.Footer{
+    margin-top: 2vh;
+    background-color: black;
+    text-align: center;
+}
+
+.ul_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Footer h3{
+    font-family: Montserrat, serif;
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.51);
+}
+
+.Footer ul{
+    list-style: none;
+}
+
+.Footer li{
+    font-family: Montserrat, serif;
+    font-size: 1.75vh;
+    color: white;
+    margin: 0.5vw -2vw;
+}
+
+.Footer li:hover{
+    text-decoration: underline;
+}
+
+.logo_footer{
+    font-family: Montserrat, serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: 0.2vw;
+    color: white;
+
+    margin: 2vh auto;
+    padding-bottom: 3vh;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.footer_li_text{
+    text-decoration: none;
+    font-family: Montserrat, serif;
+    font-size: 1.75vh;
+    color: white;
+
+}
+
+@media (max-width: 1181px) and (orientation: portrait){
+    .Footer{
+        margin-top: 15vh;
+        background-color: black;
+        text-align: center;
+    }
+
+    .Footer h3{
+        font-family: Montserrat, serif;
+        font-size: 2vh;
+        color: rgba(255, 255, 255, 0.51);
+    }
+
+    .Footer ul{
+        list-style: none;
+        margin-left: -2vw;
+    }
+
+    .Footer li{
+        margin: auto auto;
+        font-size: 1.5vh;
+    }
+
+    .footer_li_text{
+        text-decoration: none;
+        font-family: Montserrat, serif;
+        font-size: 1.5vh;
+        color: white;
+    }
+
+    .Footer li:hover{
+        text-decoration: underline;
+    }
+
+    .logo_footer{
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) and (orientation: portrait) {
+    .Footer{
+        margin-top: 10vh;
+        background-color: black;
+        text-align: center;
+    }
+
+    .ul_wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Footer h3{
+        font-family: Montserrat, serif;
+        font-size: 2vh;
+        color: rgba(255, 255, 255, 0.51);
+    }
+
+    .Footer ul{
+        list-style: none;
+        margin-left: -7vw;
+    }
+
+    .Footer li{
+        margin: auto auto;
+        font-size: 1.5vh;
+    }
+
+    .footer_li_text{
+        text-decoration: none;
+        font-family: Montserrat, serif;
+        font-size: 1.5vh;
+        color: white;
+    }
+
+    .Footer li:hover{
+        text-decoration: underline;
+    }
+
+    .logo_footer{
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .Footer{
+        margin-top: 10vh;
+    }
+
+    .ul_wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Footer h3{
+        font-family: Montserrat, serif;
+        font-size: 2.5vh;
+        color: rgba(255, 255, 255, 0.51);
+    }
+
+    .Footer ul{
+        list-style: none;
+        margin-left: -10vw;
+    }
+
+    .Footer li{
+        margin: auto auto;
+        font-size: 2vh;
+    }
+
+    .footer_li_text{
+        text-decoration: none;
+        font-family: Montserrat, serif;
+        font-size: 2vh;
+        line-height: 150%;
+        color: white;
+    }
+
+    .Footer li:hover{
+        text-decoration: underline;
+    }
+
+    .logo_footer{
+        display: none;
+    }
+}
